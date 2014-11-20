@@ -13,7 +13,7 @@ MacGitver makes Git easier for newcomers and takes some of the burden, having to
 At the same time, professional users are able to accomplish more sophisticated tasks like when a team member accidently messed up a repository.
 
 ## Some internal details and project history
-Development of MacGitver began in 2011 and actually resulted out of two separate projects, driven by the same motivation:
+Development of MacGitver started in 2011 and is actually the result of two separate projects that have been driven by the same motivation:
 *Create a freely available user interface to control Git in a comfortable way.*
 
 The developers of both projects decided to merge their begun work into one of the two projects. Thus, the other project, called *MsPiggit*, is no longer maintained and only lies there for reference.
