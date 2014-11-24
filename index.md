@@ -4,10 +4,16 @@ layout: default
 group: navigation
 ---
 # Welcome to the MacGitver Website
-Here you will find all online resources available for the MacGitver project in one place.
+This is the place where you can find all online resources available for the MacGitver project.
+
+# What is it?
+MacGitver is a platform independent user interface for the Git versioning system.
+
+# Who is it for?
+People, who like to version their files with Git, looking for a comfortable user interface.
 
 # Get a glimpse
-To see what's about to be created here, we provide some screenshots.
+See by yourself, what's about to be created here:
 
 Say hello to MacGitver:
 ![Welcome screen of MacGitver](images/screenshots/mgv_welcome_screen.png "MacGitver's welcome screen")
