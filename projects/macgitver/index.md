@@ -1,7 +1,7 @@
 ---
-title: About Macgitver
+title: MacGitver
 layout: default
-group: "navigation"
+group: "projects"
 ---
 
 # About the MacGitver project
