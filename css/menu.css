@@ -1,0 +1,224 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+#cssmenu,
+#cssmenu > .menu li,
+#cssmenu > .menu li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+  line-height: 1;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu > .menu li,
+#cssmenu > .menu li a {
+  display: none;
+}
+
+#cssmenu {
+  display: inline-block;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  width: 150px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/*
+#cssmenu:after,
+#cssmenu > .menu:after,
+#cssmenu > .menu .submenu:after {
+  content: ".";
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+*/
+
+#cssmenu #menu-indicator {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  border: 25px solid transparent;
+  border-left-color: #333;
+  opacity: .7;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+#cssmenu > .menu-head {
+  display: inline-block;
+  position: relative;
+  font-size: 24pt;
+  margin: 0;
+  padding: 0 32px 0px 32px;
+  line-height: 48px;
+  background: rgba(55, 55, 165,.3);
+  border: 1px solid #555;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #fb1;
+  -webkit-transition:   color .8s;
+  -moz-transition:      color .8s;
+  -ms-transition:       color .8s;
+  -o-transition:        color .8s;
+  transition:           color .8s;
+}
+
+#cssmenu > .menu {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  /*-webkit-transition:   left .3s ease, opacity .8s ease;
+  -moz-transition:      left .3s ease, opacity .8s ease;
+  -ms-transition:       left .3s ease, opacity .8s ease;
+  -o-transition:        left .3s ease, opacity .8s ease;
+  transition:           left .3s ease, opacity .8s ease;
+  */
+}
+#cssmenu > .menu > li > a {
+  background: url(/images/menu/blob.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  line-height: 100px;
+  opacity: .8;
+}
+#cssmenu > .menu > li a {
+  text-transform: uppercase;
+  width: 100px;
+}
+#cssmenu > .menu > li:first-child > a {
+  background: url(/images/menu/blob-first.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#cssmenu > .menu > li:last-child > a {
+  background: url(/images/menu/blob-last.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#cssmenu > .menu > li a {
+  text-align: center;
+  text-decoration: none;
+  color: #999;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  -ms-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+  outline: 0;
+}
+
+#cssmenu > .menu .submenu {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+#cssmenu > .menu .submenu li > a {
+  outline: 0;
+  text-align: left;
+  padding: 0 0 3px 0;
+}
+
+#cssmenu:hover > .menu-head {
+  color: #444444;
+  -webkit-transition:   color .8s;
+  -moz-transition:      color .8s;
+  -ms-transition:       color .8s;
+  -o-transition:        color .8s;
+  transition:           color .8s;
+}
+
+#cssmenu:hover > .menu {
+  display: block;
+  left: 30px;
+  top: 100%;
+  height: auto;
+  width: 100px;
+  opacity: 1;
+  -webkit-transition:   top .25s ease, opacity .25s ease;
+  -moz-transition:      top .25s ease, opacity .25s ease;
+  -ms-transition:       top .25s ease, opacity .25s ease;
+  -o-transition:        top .25s ease, opacity .25s ease;
+  transition:           top .25s ease, opacity .25s ease;
+}
+#cssmenu:hover > .menu li,
+#cssmenu:hover > .menu li a {
+  display: block;
+  /*position: relative;*/
+}
+
+#cssmenu > .menu li > a:hover,
+#cssmenu > .menu li:hover > a,
+#cssmenu > .menu li.active > a {
+  color: #fd5;
+  text-shadow: 0 0 0.8em #a7c0f1, 0 0 0.8em #a7c0f1, 0 0 0.8em #a7c0f1;
+}
+
+#cssmenu > .menu li:hover > .submenu {
+  display: block;
+  padding: 10px 10px 10px 10px;
+  left: 100% !Important;
+  min-width: 150px;
+  top: 35%;
+  opacity: 1;
+  background: rgba(31, 68, 31, .75);
+  border-radius: 10px;
+  border: solid 1px #555;
+  -webkit-transition: left .3s ease, opacity .3s ease;
+  -moz-transition:    left .3s ease, opacity .3s ease;
+  -ms-transition:     left .3s ease, opacity .3s ease;
+  -o-transition:      left .3s ease, opacity .3s ease;
+  transition:         left .3s ease, opacity .3s ease;
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  #cssmenu {
+    top: 0;
+    width: 75px;
+    pading 0;
+    margin 0;
+  }
+
+  #cssmenu > .menu-head {
+    padding: 0 5px 0px 5px;
+    font-size: 20pt;
+    line-height: 28px;
+    border: 0;
+    border-right: 1px dotted #333;
+    border-radius: 0;
+  }
+
+  #cssmenu #menu-indicator {
+    display: none;
+  }
+
+  #cssmenu > .menu > li > a {
+    font-size: 14px;
+    line-height: 80px;
+  }
+}

@@ -1,0 +1,16 @@
+      <div id="cssmenu">
+        <span class="menu-head">Menu</span>
+        <ul class="menu">
+
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+          <li><a href="#">Projects</a>
+            <ul class="submenu">
+              {% assign pages_list = site.pages %}
+              {% assign group = 'projects' %}
+              {% include pages_list %}
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
