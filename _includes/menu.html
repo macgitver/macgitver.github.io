@@ -6,6 +6,10 @@
           <li><a href="#">Projects</a>
             <ul class="submenu">
               {% assign pages_list = site.pages %}
+              {% assign group = 'main-projects' %}
+              {% include pages_list %}
+
+              {% assign pages_list = site.pages %}
               {% assign group = 'projects' %}
               {% include pages_list %}
             </ul>

@@ -1,7 +1,7 @@
 ---
 title: MacGitver
 layout: default
-group: "projects"
+group: "main-projects"
 ---
 
 # Why MacGitver is what you always searched for
