@@ -105,41 +105,6 @@ header h2 {
   letter-spacing: 0;
 }
 
-/*
-div#navigation {
-  background-color: rgba(10,10,10,0.5);
-  margin: 0;
-  padding: 0;
-}
-ul#nav-list {
-  margin: 0;
-  padding: 3px;
-  padding-left: 10px;
-  border-top: 1px dotted black;
-  border-bottom: 1px dotted black;
-}
-ul#nav-list li {
-  display: inline;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-right: 5px;
-  color: #fff;
-}
-ul#nav-list a:visited {
-  color: #fff;
-}
-ul#nav-list a:focus {
-  color: #ff0;
-}
-ul#nav-list a:hover {
-  color: #ff0;
-}
-ul#nav-list a:active {
-  color: #dd0;
-}
-*/
-
 #content-wrapper {
   padding-top: 5px;
 }
