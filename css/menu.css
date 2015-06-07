@@ -144,7 +144,7 @@
   padding: 0;
   border: 1px solid #585;
 }
-#cssmenu > .menu .submenu li > a {
+#cssmenu > .menu .submenu li a {
   outline: 0;
   text-align: left;
   padding: 0 0 3px 0;
@@ -167,8 +167,11 @@
   width: 100px;
   opacity: 1;
 }
+#cssmenu:hover > .menu .submenu li a {
+  display: inline;
+}
 #cssmenu:hover > .menu li,
-#cssmenu:hover > .menu li a {
+#cssmenu:hover > .menu > li a {
   display: block;
 }
 
