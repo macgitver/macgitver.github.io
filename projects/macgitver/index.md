@@ -2,6 +2,7 @@
 title: MacGitver
 layout: default
 group: "main-projects"
+project: "MacGitver"
 ---
 
 # Why MacGitver is what you always searched for

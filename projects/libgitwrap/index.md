@@ -1,7 +1,8 @@
 ---
-title: "Library: GitWrap"
+title: "The GitWrap library"
 layout: default
 group: "projects"
+project: "libGitWrap"
 ---
 
 # About the GitWrap library
