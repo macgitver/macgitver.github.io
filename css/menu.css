@@ -168,7 +168,6 @@
 #cssmenu:hover > .menu li,
 #cssmenu:hover > .menu li a {
   display: block;
-  /*position: relative;*/
 }
 
 #cssmenu > .menu li > a:hover,
@@ -200,8 +199,8 @@
   #cssmenu {
     top: 0;
     width: 75px;
-    pading 0;
-    margin 0;
+    padding: 0;
+    margin: 0;
   }
 
   #cssmenu > .menu-head {
