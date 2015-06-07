@@ -114,13 +114,14 @@ header h2 {
 }
 
 #content-wrapper {
-  padding-top: 5px;
+  margin: 5px 0 20px 20px;
 }
 
 #main-content {
+  display: block;
+  float: left;
   padding: 10px;
   width: 60%;
-  float: left;
   background: rgba(10, 10, 10, .35);
   background: url(/images/blueprint.jpg) 0 0 repeat;
   border-radius: 15px;
@@ -130,6 +131,10 @@ header h2 {
   -o-transition:        opacity .8s ease;
   transition:           opacity .8s ease;
 }
+#main-content img {
+  max-width: 100%;
+}
+/*
 #main-content:after {
   content: "";
   top: 0;
@@ -139,58 +144,43 @@ header h2 {
   position: absolute;
   z-index: -1;
 }
+*/
 
-#main-content img {
-  max-width: 100%;
-}
-
-aside#sidebar {
+#sidebar {
+  display: inline;
+  float: left;
+  left: auto;
+  right: auto;
   width: 200px;
-  padding: 15px;
-  min-height: 50px;
-  float: right;
-  background: rgba(200,200,230,.5) 0 0 repeat;
-  border-radius: 10px;
-  font-size: 12px;
-  line-height: 1.3;
+  margin-left: 15px;
 }
-
-aside#sidebar p.repo-owner,
-aside#sidebar p.repo-owner a {
-  font-weight: bold;
-}
-
-#downloads {
-  margin-bottom: 40px;
-}
-
-a.button {
-  width: 134px;
-  height: 58px;
-  line-height: 1;
-  font-size: 23px;
-  color: #fff;
-  padding-left: 68px;
-  padding-top: 22px;
+#sidebar .button {
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid #18f;
+  border-radius: 1em 2em 7em 1em;
+  background-color: rgba(85, 144, 221, .65);
   font-family: 'Oswald', 'Helvetica Neue', Helvetica, Arial, serif;
+  letter-spacing: -1px;
+  font-size: 30px;
+  line-height: 52px;
 }
-a.button small {
-  display: block;
-  font-size: 11px;
+#sidebar .button > img {
+  margin: 5px;
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
 }
-aside a.button-gh {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: transparent url(/images/github-button.png) 0 0 no-repeat;
+#sidebar .button > a {
+  color: #fc3;
 }
-aside a.button-dl {
-  width: 138px;
-  padding-left: 64px;
-  display: block;
-  background: transparent url(/images/download-button.png) 0 0 no-repeat;
-  margin-bottom: 20px;
-  font-size: 21px;
+#sidebar .text-box {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(55,55,55,.65);
+  color: #ddd;
+  font-size: 8pt;
 }
 
 code, pre {
@@ -487,18 +477,18 @@ footer a:hover {
     display: inline;
   }
   #main-content,
-  aside#sidebar {
-    float: none;
+  #sidebar {
+    float: left;
     width: 100% !important;
   }
-  aside#sidebar {
+  #sidebar {
     background-image: none;
     margin-top: 20px;
     border-top: solid 1px #ddd;
     padding: 20px 0;
     min-height: 0;
   }
-  aside#sidebar a.button {
+  #sidebar a.button {
     display: none;
   }
   #main-content h1:before,
