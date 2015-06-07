@@ -139,6 +139,11 @@
   -o-transition:      left .3s ease, opacity .3s ease;
   transition:         left .3s ease, opacity .3s ease;
 }
+#cssmenu > .menu .submenu hr {
+  margin: 2px 0 15px 0;
+  padding: 0;
+  border: 1px solid #585;
+}
 #cssmenu > .menu .submenu li > a {
   outline: 0;
   text-align: left;
