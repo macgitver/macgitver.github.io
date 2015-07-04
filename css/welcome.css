@@ -379,7 +379,7 @@ footer a:hover {
 /* #Media Queries
 ================================================== */
 
-/* all devices with portrait orientation */
+/* screens in portrait orientation */
 @media only screen and (orientation: portrait) {
   body {
     background: #fafafa url(/images/site-bg-portrait.jpg) 0 0 no-repeat;
