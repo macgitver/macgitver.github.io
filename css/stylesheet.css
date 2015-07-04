@@ -441,15 +441,14 @@ footer a:hover {
     padding: 0;
   }
   header .inner {
-    padding: 0 10px 0 80px;
+    padding: 0 10px 0 60px;
     width: 100%;
     background: rgba(85, 144, 221, .35);
     border-radius: 0;
     border-bottom: solid 3px #275da1;
   }
   header h1, header h2 {
-    width: 100%;
-    line-height: 90px;
+    line-height: 30px;
     font-size: 24px;
   }
   header a.button {
