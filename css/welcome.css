@@ -110,20 +110,13 @@ header h2 {
 #main-content {
   width: 100%;
   float: left;
-  /*background: rgba(10, 10, 10, .35);*/
-  /*background: url(/images/blueprint.jpg) 0 0 repeat;*/
-  border-radius: 15px;
 }
-/*#main-content:after {
+#main-content:after {
   content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: 0; left: 0; bottom: 0; right: 0;
   position: absolute;
   z-index: -1;
 }
-*/
 
 #preview {
   table-layout: fixed;
