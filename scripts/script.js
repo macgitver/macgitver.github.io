@@ -12,8 +12,8 @@
 
       return this.each(function() {
         cssmenu.find('li ul').parent().addClass('has-sub');
+        /*
         if (settings.format != 'select') {
-          /*
           cssmenu.prepend('<div id="menu-button">' + settings.title + '</div>');
           $(this).find("#menu-button").on('mouseover', function(){
             $(this).toggleClass('menu-opened');
@@ -44,10 +44,9 @@
 
           if (settings.format === 'multitoggle') multiTg();
           else cssmenu.addClass('dropdown');
-          */
-        }
+        }*/
 
-        else if (settings.format === 'select')
+        if (settings.format === 'select')
         {
           cssmenu.append('<select style="width: 100%"/>').addClass('select-list');
           var selectList = cssmenu.find('select');
@@ -66,31 +65,6 @@
             window.location = $(this).find("option:selected").val();
           });
         }
-
-        if (settings.sticky === true) cssmenu.css('position', 'fixed');
-
-        resizeFix = function() {
-          if ($(window).width() > settings.breakpoint) {
-            cssmenu.find('ul').show();
-            cssmenu.removeClass('small-screen');
-            if (settings.format === 'select') {
-              cssmenu.find('select').hide();
-            }
-            else {
-              cssmenu.find("#menu-button").removeClass("menu-opened");
-            }
-          }
-
-          if ($(window).width() <= settings.breakpoint && !cssmenu.hasClass("small-screen")) {
-            cssmenu.find('ul').hide().removeClass('open');
-            cssmenu.addClass('small-screen');
-            if (settings.format === 'select') {
-              cssmenu.find('select').show();
-            }
-          }
-        };
-        resizeFix();
-        return $(window).on('resize', resizeFix);
 
       });
   };
