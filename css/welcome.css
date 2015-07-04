@@ -92,11 +92,8 @@ header h1 {
   color: #333;
   text-shadow: 0 0 0.8em #a7c0f1, 0 0 0.8em #a7c0f1, 0 0 0.8em #a7c0f1;
   line-height: 1;
-  /*margin-bottom: 0.2em;*/
-  /*width: 540px;*/
   text-transform: uppercase;
 }
-
 header h2 {
   font-size: 26px;
   color: #333;
@@ -105,41 +102,6 @@ header h2 {
   width: 540px;
   letter-spacing: 0;
 }
-
-/*
-div#navigation {
-  background-color: rgba(10,10,10,0.5);
-  margin: 0;
-  padding: 0;
-}
-ul#nav-list {
-  margin: 0;
-  padding: 3px;
-  padding-left: 10px;
-  border-top: 1px dotted black;
-  border-bottom: 1px dotted black;
-}
-ul#nav-list li {
-  display: inline;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-right: 5px;
-  color: #fff;
-}
-ul#nav-list a:visited {
-  color: #fff;
-}
-ul#nav-list a:focus {
-  color: #ff0;
-}
-ul#nav-list a:hover {
-  color: #ff0;
-}
-ul#nav-list a:active {
-  color: #dd0;
-}
-*/
 
 #content-wrapper {
   padding-top: 5px;
@@ -207,55 +169,6 @@ ul#nav-list a:active {
   max-width: 20%;
 }
 
-/*aside#sidebar {
-  width: 200px;
-  padding-left: 20px;
-  min-height: 504px;
-  float: right;
-  background: transparent url(/images/sidebar-bg.jpg) 0 0 no-repeat;
-  font-size: 12px;
-  line-height: 1.3;
-}
-
-aside#sidebar p.repo-owner,
-aside#sidebar p.repo-owner a {
-  font-weight: bold;
-}
-*/
-/*
-#downloads {
-  margin-bottom: 40px;
-}
-
-a.button {
-  width: 134px;
-  height: 58px;
-  line-height: 1;
-  font-size: 23px;
-  color: #fff;
-  padding-left: 68px;
-  padding-top: 22px;
-  font-family: 'Oswald', 'Helvetica Neue', Helvetica, Arial, serif;
-}
-a.button small {
-  display: block;
-  font-size: 11px;
-}
-aside a.button-gh {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: transparent url(/images/github-button.png) 0 0 no-repeat;
-}
-aside a.button-dl {
-  width: 138px;
-  padding-left: 64px;
-  display: block;
-  background: transparent url(/images/download-button.png) 0 0 no-repeat;
-  margin-bottom: 20px;
-  font-size: 21px;
-}
-*/
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
@@ -543,16 +456,6 @@ footer a:hover {
   aside#sidebar {
     float: none;
     width: 100% !important;
-  }
-  aside#sidebar {
-    background-image: none;
-    margin-top: 20px;
-    border-top: solid 1px #ddd;
-    padding: 20px 0;
-    min-height: 0;
-  }
-  aside#sidebar a.button {
-    display: none;
   }
   #main-content h1:before,
   #main-content h2:before,
