@@ -58,8 +58,6 @@
 }
 
 #cssmenu > .menu-head {
-  display: inline-block;
-  position: relative;
   font-size: 24pt;
   margin: 0;
   padding: 0 32px 0px 32px;
@@ -77,33 +75,26 @@
 }
 
 #cssmenu > .menu {
-  display: none;
   position: absolute;
   padding: 0;
   margin: 0;
-  height: 0;
-  width: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0;
+  height: 0; width: 0;
   opacity: 0;
-  -webkit-transition:   top .25s ease, opacity .25s;
-  -moz-transition:      top .25s ease, opacity .25s;
-  -ms-transition:       top .25s ease, opacity .25s;
-  -o-transition:        top .25s ease, opacity .25s;
-  transition:           top .25s ease, opacity .25s;
+  -webkit-transition:   top .25s ease, opacity .5s;
+  -moz-transition:      top .25s ease, opacity .5s;
+  -ms-transition:       top .25s ease, opacity .5s;
+  -o-transition:        top .25s ease, opacity .5s;
+  transition:           top .25s ease, opacity .5s;
 }
 #cssmenu > .menu > li > a {
+  width: 100px;
+  line-height: 100px;
   background: url(/images/menu/blob.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  font-size: 18px;
-  line-height: 100px;
+  text-align: center;
   opacity: .8;
-}
-#cssmenu > .menu > li a {
-  text-transform: uppercase;
-  width: 100px;
 }
 #cssmenu > .menu > li:first-child > a {
   background: url(/images/menu/blob-first.svg);
@@ -116,20 +107,18 @@
   background-repeat: no-repeat;
 }
 #cssmenu > .menu > li a {
-  text-align: center;
-  text-decoration: none;
+  text-transform: uppercase;
   color: #999;
+  font-size: 18px;
+  outline: 0;
   -webkit-transition: all .8s ease;
   -moz-transition: all .8s ease;
   -ms-transition: all .8s ease;
   -o-transition: all .8s ease;
   transition: all .8s ease;
-  outline: 0;
 }
 
 #cssmenu > .menu .submenu {
-  display: none;
-  opacity: 0;
   position: absolute;
   left: 0;
   min-width: 150px;
@@ -138,6 +127,7 @@
   background: rgba(31, 68, 31, .75);
   border-radius: 10px;
   border: solid 1px #555;
+  opacity: 0;
   -webkit-transition: left .3s ease, opacity .3s ease;
   -moz-transition:    left .3s ease, opacity .3s ease;
   -ms-transition:     left .3s ease, opacity .3s ease;
@@ -150,9 +140,8 @@
   border: 1px solid #585;
 }
 #cssmenu > .menu .submenu li a {
-  outline: 0;
-  text-align: left;
   padding: 0 0 3px 0;
+  font-size: 16px;
 }
 
 #cssmenu:hover > .menu-head {
@@ -163,17 +152,10 @@
   -o-transition:        color .8s;
   transition:           color .8s;
 }
-
 #cssmenu:hover > .menu {
-  display: block;
-  left: 30px;
-  top: 100%;
-  height: auto;
-  width: 100px;
+  left: 30px; top: 100%;
+  height: auto; width: auto;
   opacity: 1;
-}
-#cssmenu:hover > .menu .submenu li a {
-  display: inline;
 }
 #cssmenu:hover > .menu li,
 #cssmenu:hover > .menu > li a {
@@ -188,7 +170,6 @@
 }
 
 #cssmenu > .menu li:hover > .submenu {
-  display: block;
   left: 100% !Important;
   opacity: 1;
 }
@@ -197,26 +178,36 @@
 @media only screen and (max-width: 767px) {
   #cssmenu {
     top: 0;
+    left: 0;
     width: 75px;
     padding: 0;
     margin: 0;
   }
-
   #cssmenu > .menu-head {
-    padding: 0 5px 0px 5px;
-    font-size: 20pt;
-    line-height: 28px;
+    margin: 0;
+    padding: 1px 5px 1px 5px;
+    font-size: 14pt;
+    line-height: 30px;
     border: 0;
     border-right: 1px dotted #333;
     border-radius: 0;
   }
-
   #cssmenu #menu-indicator {
     display: none;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+  #cssmenu > .menu > li a,
+  #cssmenu > .menu .submenu > li a {
+    font-size: 13px;
+  }
+  #cssmenu > .menu > li > a {
+    width: 75px;
+    line-height: 75px;
   }
 
-  #cssmenu > .menu > li > a {
-    font-size: 14px;
-    line-height: 80px;
+  #cssmenu:hover > .menu {
+    left: 0;
   }
 }
