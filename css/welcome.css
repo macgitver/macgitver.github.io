@@ -480,11 +480,17 @@ footer a:hover {
     padding-right: 0;
     margin-left: 0;
   }
+  #main-content {
+    margin-top: 20px;
+  }
   #main-content h1 {
     font-size: 24px;
+    line-height: 1.5;
   }
   #main-content h2 {
     font-size: 16px;
+    line-height: 1.5;
+  }
   }
 }
 
@@ -492,4 +498,11 @@ footer a:hover {
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+  #main-content h1 {
+    font-size: 20px;
+  }
+  #main-content h2 {
+    font-size: 12px;
+  }
+}
