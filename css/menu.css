@@ -1,0 +1,213 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+#cssmenu,
+#cssmenu > .menu li,
+#cssmenu > .menu li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+  line-height: 1;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu > .menu li,
+#cssmenu > .menu li a {
+  display: none;
+}
+
+#cssmenu {
+  display: inline-block;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  width: 150px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#cssmenu:after,
+#cssmenu > .menu:after,
+#cssmenu > .menu .submenu:after {
+  content: "";
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+#cssmenu #menu-indicator {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  border: 25px solid transparent;
+  border-left-color: #333;
+  opacity: .7;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+#cssmenu > .menu-head {
+  font-size: 24pt;
+  margin: 0;
+  padding: 0 32px 0px 32px;
+  line-height: 48px;
+  background: rgba(55, 55, 165,.3);
+  border: 1px solid #555;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #fb1;
+  -webkit-transition:   color .8s;
+  -moz-transition:      color .8s;
+  -ms-transition:       color .8s;
+  -o-transition:        color .8s;
+  transition:           color .8s;
+}
+
+#cssmenu > .menu {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0; left: 0;
+  height: 0; width: 0;
+  opacity: 0;
+  -webkit-transition:   top .25s ease, opacity .5s;
+  -moz-transition:      top .25s ease, opacity .5s;
+  -ms-transition:       top .25s ease, opacity .5s;
+  -o-transition:        top .25s ease, opacity .5s;
+  transition:           top .25s ease, opacity .5s;
+}
+#cssmenu > .menu > li > a {
+  width: 100px;
+  line-height: 100px;
+  background: url(/images/menu/blob.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  opacity: .8;
+}
+#cssmenu > .menu > li:first-child > a {
+  background: url(/images/menu/blob-first.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#cssmenu > .menu > li:last-child > a {
+  background: url(/images/menu/blob-last.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#cssmenu > .menu > li a {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 18px;
+  outline: 0;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  -ms-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+#cssmenu > .menu .submenu {
+  position: absolute;
+  left: 0;
+  min-width: 150px;
+  top: 35%;
+  padding: 10px 10px 10px 10px;
+  background: rgba(31, 68, 31, .75);
+  border-radius: 10px;
+  border: solid 1px #555;
+  opacity: 0;
+  -webkit-transition: left .3s ease, opacity .3s ease;
+  -moz-transition:    left .3s ease, opacity .3s ease;
+  -ms-transition:     left .3s ease, opacity .3s ease;
+  -o-transition:      left .3s ease, opacity .3s ease;
+  transition:         left .3s ease, opacity .3s ease;
+}
+#cssmenu > .menu .submenu hr {
+  margin: 2px 0 15px 0;
+  padding: 0;
+  border: 1px solid #585;
+}
+#cssmenu > .menu .submenu li a {
+  padding: 0 0 3px 0;
+  font-size: 16px;
+}
+
+#cssmenu:hover > .menu-head {
+  color: #444444;
+  -webkit-transition:   color .8s;
+  -moz-transition:      color .8s;
+  -ms-transition:       color .8s;
+  -o-transition:        color .8s;
+  transition:           color .8s;
+}
+#cssmenu:hover > .menu {
+  left: 30px; top: 100%;
+  height: auto; width: auto;
+  opacity: 1;
+}
+#cssmenu:hover > .menu li,
+#cssmenu:hover > .menu > li a {
+  display: block;
+}
+
+#cssmenu > .menu li > a:hover,
+#cssmenu > .menu li:hover > a,
+#cssmenu > .menu li.active > a {
+  color: #fd5;
+  text-shadow: 0 0 0.8em #a7c0f1, 0 0 0.8em #a7c0f1, 0 0 0.8em #a7c0f1;
+}
+
+#cssmenu > .menu li:hover > .submenu {
+  left: 100% !Important;
+  opacity: 1;
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  #cssmenu {
+    top: 0;
+    left: 0;
+    width: 75px;
+    padding: 0;
+    margin: 0;
+  }
+  #cssmenu > .menu-head {
+    margin: 0;
+    padding: 1px 5px 1px 5px;
+    font-size: 14pt;
+    line-height: 30px;
+    border: 0;
+    border-right: 1px dotted #333;
+    border-radius: 0;
+  }
+  #cssmenu #menu-indicator {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+  #cssmenu > .menu > li a,
+  #cssmenu > .menu .submenu > li a {
+    font-size: 13px;
+  }
+  #cssmenu > .menu > li > a {
+    width: 75px;
+    line-height: 75px;
+  }
+
+  #cssmenu:hover > .menu {
+    left: 0;
+  }
+}
